@@ -14,7 +14,7 @@ pipeline {
 
     stage('Install Frontend') {
       steps {
-        dir('src/frontend') {
+        dir('src/frontend/test-proj') {
           sh 'npm install'
         }
       }

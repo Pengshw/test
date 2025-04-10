@@ -6,7 +6,8 @@ pipeline {
   }
 
   environment {
-    NODE_ENV = 'development'
+    NODE_ENV = 'dev'
+    PORT=4202
   }
 
   stages {

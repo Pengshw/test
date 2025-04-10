@@ -1,0 +1,20 @@
+{
+    "development" : {
+        "database": "test",
+        "username": "",
+        "password": "",
+        "dialect" : "postgres",
+        "host" : "localhost",
+        "port" : "5432",
+        "options" : {
+            "timezone": "Asia/Singapore",
+            "pool": {
+                "acquire": 30000,
+                "idle": 10000
+            }
+        },
+        "dialectOptions" : {
+            "useUTC" : false
+        }
+    }
+}

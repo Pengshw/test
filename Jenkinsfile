@@ -36,7 +36,7 @@ pipeline {
     stage('Serve Frontend') {
       steps {
         dir('src/frontend/test-proj') {
-          sh 'npm start'
+          sh 'nohup npm start &'
         }
       }
     }
@@ -53,7 +53,7 @@ pipeline {
     stage('Run Backend Server') {
       steps {
         dir('src/api') {
-          sh 'npm start' 
+          sh 'nohup npm start &' 
         }
       }
     }

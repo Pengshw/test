@@ -28,7 +28,15 @@ pipeline {
     stage('Build Frontend') {
       steps {
         dir('src/frontend/test-proj') {
-          sh 'npm run dev'
+          sh 'npm run build'
+        }
+      }
+    }
+
+    stage('Serve Frontend') {
+      steps {
+        dir('src/frontend/test-proj') {
+          sh 'npm start'
         }
       }
     }
